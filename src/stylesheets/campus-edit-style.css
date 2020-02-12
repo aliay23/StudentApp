@@ -1,0 +1,113 @@
+.edit-campus-modal {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: 50px 40px 40px 40px 180px 40px 40px auto;
+  grid-template-areas: 
+  "title    title      title "
+  "name     nInput     nInput"
+  "locati   lInput     lInput"
+  "imgurl   iInput     iInput"
+  "descr    dInput     dInput"
+  ".        savebtn    .     "
+  "dropdown dropdown   addBtn"
+  "students students  students";
+
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  align-items: start;
+
+  width: 600px; 
+  /* height: 1450px; */
+  border-radius: 5px;
+  background-color:white;
+  padding: 40px 30px 30px 30px;
+  margin: 100px auto;
+}
+
+.campus-edit-header {
+  position: relative;
+  top: -35px;
+  grid-area: title;
+  justify-self: center;
+}
+
+.edit-name-label {
+  grid-area: name;
+  justify-self: end;
+  font-weight: 400;
+}
+.edit-loca-label {
+  grid-area: locati;
+  justify-self: end;
+  font-weight: 400;
+}
+.edit-url-label {
+  grid-area: imgurl;
+  justify-self: end;
+  font-weight: 400;
+}
+.edit-desc-label {
+  grid-area: descr;
+  justify-self: end;
+  font-weight: 400;
+}
+.name-input {
+  grid-area: nInput;
+}
+.loca-input {
+  grid-area: lInput;
+}
+.campus-url-input {
+  grid-area: iInput;
+}
+.desc-input {
+  grid-area: dInput;
+  resize: none;
+  
+}
+.campus-save-changes {
+  grid-area: savebtn;
+  height: 40px;
+}
+.close-modal {
+  position: absolute;
+  top:0px;
+  right:10px;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.student-names-dropdown {
+  grid-area: dropdown;
+  width: 70%;
+  place-self: center;
+}
+
+.add-to-campus-btn {
+  grid-area: addBtn;
+  justify-self: start;
+  align-self: center;
+
+  height: 35px;
+  width: 125px;
+  border-radius: 5px;
+  background-color: rgb(0, 195, 255);
+  border: 1px solid black;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.add-to-campus-btn:active {
+  background-color: rgb(0, 163, 212);
+}
+
+.students-card-container {
+  grid-area: students;
+  justify-self: center;  
+  background-color: rgb(230, 247, 241);
+  padding: 15px;
+  box-sizing: border-box;
+  max-height: 600px;
+  overflow-y: auto;
+}
