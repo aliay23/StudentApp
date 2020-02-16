@@ -18,16 +18,16 @@ class HomePage extends React.Component {
           <div className="crudContainer">
             <div className="outerCircle"></div>
             <div className="innerCircle"></div>
-            <label className="text2">Your</label>
+            <label className="text2">App</label>
           </div>
 
           <div className="nameContainer">
-            <label className="text1">Rate</label>
+            <label className="text1">Student</label>
             <div className="block"></div>
           </div>
 
           <div className="webContainer">
-            <label className="text3">Classmates</label>
+            <label className="text3">Connection</label>
           </div>
 
           <div className="appContainer">

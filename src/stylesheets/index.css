@@ -131,7 +131,6 @@ code {
   left: -50px;
   top: -100px;
   border-radius: 50%;
-  background-color: pink;
   height: 0px;
   width: 0px;
   animation: circleGrowOuter 2s ease 3s 1 forwards;
@@ -141,7 +140,7 @@ code {
   left: -50px;
   top: -100px;
   border-radius: 50%;
-  background-color: rgb(209, 58, 128);
+  background-color: darkturquoise;
   height: 0px;
   width: 0px;
   animation: circleGrowInner 2s ease 4.3s 1 forwards;
